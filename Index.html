@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery.js"></script>
+</head>
+
+<body>
+    <h1>Hello World</h1>
+    <script>
+        $(document).ready(function () {
+            $("h1").on({
+                "click": function () {
+                    $(this).css("color", "red")
+                },
+                "mouseover": function () {
+                    $(this).css("color", "blue")
+                },
+                "dblclick": function () {
+                    $(this).css("color", "yellow")
+                }
+
+            })
+        })
+    </script>
+</body>
+
+</html>
